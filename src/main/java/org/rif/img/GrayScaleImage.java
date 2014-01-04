@@ -7,8 +7,6 @@ package org.rif.img;
  */
 public interface GrayScaleImage {
 
-  public static final Integer MAX_GRAY_VALUE = 255;
-
   public Integer[][] getPixels();
   public void setPixels(Integer[][] pixels);
   public Integer getRows();

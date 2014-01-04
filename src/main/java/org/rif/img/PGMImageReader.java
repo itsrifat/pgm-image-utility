@@ -21,6 +21,7 @@ public class PGMImageReader implements ImageReader {
   public GrayScaleImage readImage(String imagePath) {
     GrayScaleImage image = null;
     try{
+      LOGGER.debug("Trying to read PGM image located at "+imagePath);
       FileInputStream fileInputStream = new FileInputStream(imagePath);
       BufferedReader d = new BufferedReader(new InputStreamReader(fileInputStream));
 
@@ -65,7 +66,7 @@ public class PGMImageReader implements ImageReader {
       }
       image = new PGMImage(rows,columns,maxGrayValue,pixels);
     }catch (Exception e){
-      LOGGER.error("Could not read image "+imagePath+". Possible Explaination is below:");
+      LOGGER.error("Could not read image "+imagePath+". Possible Explanation is below:");
       LOGGER.error(e);
     }
     return image;

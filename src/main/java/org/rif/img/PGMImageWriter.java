@@ -7,7 +7,6 @@ import java.io.DataOutputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.Date;
 
 /**
  * Author: Moinul Hossain
@@ -20,12 +19,13 @@ public class PGMImageWriter implements ImageWriter{
   private static final Logger LOGGER = Logger.getLogger(PGMImageWriter.class);
 
   @Override
-  public void writeImage(String path, GrayScaleImage grayScaleImage){
+  public void writeImage(String imagePath, GrayScaleImage grayScaleImage){
     try{
+      LOGGER.debug("Trying to write PGMImage to "+imagePath);
       PGMImage image;
       if(grayScaleImage instanceof GrayScaleImage){
         image = (PGMImage)grayScaleImage;
-        FileOutputStream fileOutputStream = new FileOutputStream(path);
+        FileOutputStream fileOutputStream = new FileOutputStream(imagePath);
         DataOutputStream out=new DataOutputStream(fileOutputStream);
         Integer[][] imagePixels = image.getPixels();
 

@@ -8,6 +8,9 @@ import org.rif.img.utils.ImageUtils;
  * Date: 1/3/14
  */
 public class PGMImage implements GrayScaleImage {
+
+  private static final String MAGIC_NUMBER = "P5";
+
   private Integer rows;
   private Integer columns;
   private Integer[][] pixels;
@@ -19,7 +22,7 @@ public class PGMImage implements GrayScaleImage {
   }
 
   public PGMImage(Integer rows, Integer columns,Integer maxGrayValue,Integer[][] pixels) {
-    this.magicNumber = "P5";
+    this.magicNumber = MAGIC_NUMBER;
     this.rows = rows;
     this.columns = columns;
     this.pixels = pixels;
