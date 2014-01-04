@@ -5,6 +5,10 @@ package org.rif.img;
  * email: moinul.hossain@csebuet.org
  * Date: 1/3/14
  */
+
+/**
+ * A general interface fpr representing a {@link GrayScaleImage}
+ */
 public interface GrayScaleImage {
 
   public Integer[][] getPixels();

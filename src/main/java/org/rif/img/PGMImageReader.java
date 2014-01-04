@@ -13,6 +13,11 @@ import java.util.Scanner;
  * email: moinul.hossain@csebuet.org
  * Date: 1/3/14
  */
+
+/**
+ * An implementation of {@link ImageReader} that reads an image file as {@PGMImage}
+ *
+ */
 public class PGMImageReader implements ImageReader {
   public static final String COMMENT_MARKER = "#";
   private static final Logger LOGGER = Logger.getLogger(PGMImageReader.class);

@@ -7,6 +7,10 @@ import org.rif.img.utils.ImageUtils;
  * email: moinul.hossain@csebuet.org
  * Date: 1/3/14
  */
+
+/**
+ * An implementation of {@link GrayScaleImage} that represents an image of PGM Format
+ */
 public class PGMImage implements GrayScaleImage {
 
   private static final String MAGIC_NUMBER = "P5";

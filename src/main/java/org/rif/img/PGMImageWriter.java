@@ -13,6 +13,11 @@ import java.io.IOException;
  * email: moinul.hossain@csebuet.org
  * Date: 1/3/14
  */
+
+/**
+ * An implementation of {@link ImageWriter} that write a {@PGMImage} to a file specified
+ *
+ */
 public class PGMImageWriter implements ImageWriter{
 
 
