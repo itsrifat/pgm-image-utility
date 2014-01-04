@@ -138,5 +138,24 @@ public class ImageUtils {
     }
   }
 
+  public static Double[] toDoubleArray(Integer arr[]){
+    Double[] doubleArr = new Double[arr.length];
+    for(int i=0;i < arr.length;i++){
+      doubleArr[i] = arr[i].doubleValue();
+    }
+    return doubleArr;
+  }
+
+  public static Double[][] toDoubleArray(Integer arr[][]){
+    Double[][] doubleArr = new Double[arr.length][];
+    for(int i=0;i < arr.length;i++){
+      doubleArr[i] = new Double[arr[i].length];
+      for(int j=0;j<arr[i].length;j++){
+        doubleArr[i][j] = arr[i][j].doubleValue();
+      }
+    }
+    return doubleArr;
+  }
+
 
 }
