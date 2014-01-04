@@ -166,5 +166,16 @@ public class ImageUtils {
     return doubleArr;
   }
 
+  public static Integer[][] toIntArray(Double arr[][]){
+    Integer[][] intArray = new Integer[arr.length][];
+    for(int i=0;i < arr.length;i++){
+      intArray[i] = new Integer[arr[i].length];
+      for(int j=0;j<arr[i].length;j++){
+        intArray[i][j] = arr[i][j].intValue();
+      }
+    }
+    return intArray;
+  }
+
 
 }
