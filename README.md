@@ -6,7 +6,7 @@ Some Utility classes for reading and writing and playing with GrayScale PGM Imag
 The module contains:
 
  
-- ```PGMIMage```: a class t represent a PGMImage
+- ```PGMImage```: a class t represent a PGMImage
 - ```PGMImageReader```: a class to read a PGM image from file
 - ```PGMImageWriter```: a class to write a PGM image to a file
 - ```ImageUtils```: contains some utility methods to manipulate PGM image. Includes functions are:
