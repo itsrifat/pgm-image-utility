@@ -1,7 +1,7 @@
 pgm-image-utility
 =================
 
-Some Utility classes for reading and writing and playing with GrayScale PGM Images. Can be useful for playing with different Image Processing techniques using PGM Images. I wrote it for doing my image processing course assignments. Just kept here for personal reference.
+Some Utility classes for reading and writing and playing with GrayScale PGM Images. Can be useful for playing with basic Image Processing techniques using PGM Images. I wrote it for doing my image processing course assignments. Just kept here for personal reference.
 
 The module contains:
 
@@ -21,7 +21,7 @@ Sample Usage
   
   ImageReader reader = new ImageReader();
   ImageWriter writer = new ImageWriter();
-  GrayScaleImage image = rader.readImage("C:\\lenna.pgm");
+  GrayScaleImage image = rader.readImage("/imageDir/lenna.pgm");
   Integer[][] pixels = image.getPixels();
   Double[][] realPart = ImageUtils.toDoubleArray(pixels);
   
@@ -38,7 +38,7 @@ Sample Usage
   GrayScaleImage outputImage = new PGMImage(outputPixels.length,outputPixels[0].length,
                                            image.getMaxGrayValue(),outputPixels);
   
-  writer.writeImage("C:\\lenna-after-fourier.pgm",outputImage);
+  writer.writeImage("/tagetDir/lenna-after-fourier.pgm",outputImage);
   
   
 
